@@ -8,6 +8,7 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 
 
 export const LoginPage = () => {
@@ -44,7 +45,7 @@ export const LoginPage = () => {
                 sx={{ backgroundColor: "grey" }}
             >
                 <Card variant="outlined" sx={{
-                    minWidth: '320px',
+                    maxWidth: '400px',
                     height: "450px",
                     p: 2,
                     overflow: 'visible',
@@ -55,17 +56,18 @@ export const LoginPage = () => {
                         flexDirection: 'column',
                         gap: 2,
                         p: 2,
-                        color: 'white',
-                        mt: -4, mb: 3,
-                        background: 'blue'
+                        color: 'blue',
+                        
                     }}>
-                        <Typography level="h2" fontSize="md" sx={{
-                            alignSelf: 'flex-start',
-                            fontWeight: '700'
+                        <Typography sx={{
+                            fontWeight: '700',
+                            textAlign: "center",
+                            fontFamily: "arial",
+                            fontSize: "20px",
+                            marginBottom : "30px",
                         }}>
-                            Management System
+                            Sign In Into The System
                         </Typography>
-                        <Typography level="body2">Sign-In to this Management System</Typography>
                     </Box>
                     <Box>
                         <FormControl variant="standard" sx={{ width: 1, gap: 2 }}>
@@ -120,6 +122,15 @@ export const LoginPage = () => {
                             color: "red",
                             p: 1
                         }}>I forgot my password</Button>
+
+                        <Button sx={{
+                            mt: "20px",
+                            px: 1,
+                            width: "100%",
+                            color: "red",
+                            p: 1
+                        }}><Link to="/register">Don't Have An Account? </Link></Button>
+                       
                     </Box>
 
                 </Card>
