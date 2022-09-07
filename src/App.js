@@ -4,7 +4,6 @@ import { AppRoutes } from "./Routes/app-routes";
 function App() {
   return (
     <AppRoutes/>
-
     
   );
 }

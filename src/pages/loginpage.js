@@ -9,7 +9,7 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
-
+import axios from 'axios';
 
 export const LoginPage = () => {
     const { register, handleSubmit, formState: { errors } } = useForm(); //form validation
@@ -23,8 +23,19 @@ export const LoginPage = () => {
         setValues({ ...values, [prop]: event.target.value });
     };
 
+    const data ={
+        email:values.email,
+        password:values.password
+    }
+   
     const onSubmit = () => {
-        alert("I am logged in")
+        console.log(values)
+        axios.post(`http://localhost:8000/auth/login`,values)
+        .then((res)=>{
+            console.log('res is generated')
+        })
+        .catch((err)=> {
+        })
     }
 
     const handleClickShowPassword = () => {
@@ -115,13 +126,6 @@ export const LoginPage = () => {
                             <Button type="submit" onClick={handleSubmit(onSubmit)} variant="outlined" sx={{ width: "30%" }}>Sign In</Button>
 
                         </FormControl>
-                        <Button sx={{
-                            mt: "20px",
-                            px: 1,
-                            width: "100%",
-                            color: "red",
-                            p: 1
-                        }}>I forgot my password</Button>
 
                         <Button sx={{
                             mt: "20px",
