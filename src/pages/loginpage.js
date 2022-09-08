@@ -23,18 +23,19 @@ export const LoginPage = () => {
         setValues({ ...values, [prop]: event.target.value });
     };
 
-    const data = {
+    const data ={
         email:values.email,
         password:values.password
     }
    
     const onSubmit = () => {
         console.log(values)
-        axios.post(`http://localhost:8000/auth/login`,values)
+        axios.post(`http://localhost:4000/users/authenticate`,values)
         .then((res)=>{
-            console.log('res is generated')
+            console.log('The login is successfully done with', res)
         })
         .catch((err)=> {
+            console.log("The error is :", err)
         })
     }
 

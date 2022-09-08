@@ -1,31 +1,24 @@
-import {BrowserRouter,Routes,Route} from "react-router-dom";
-import NavBar from "../Component/navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Customer } from "../pages/CustomerTable";
 import { DashBoard } from "../pages/dashboard";
 import { LoginPage } from "../pages/loginpage";
 import { Product } from "../pages/product";
 import { Products } from "../pages/ProductTable";
 import { RegisterPage } from "../pages/Registerpage";
-import {CartProduct} from "../Component/CartProuct";
 
-export const AppRoutes =() => {
-    return(
-        <>
-        <BrowserRouter>
+export const AppRoutes = () => {
+  return (
+    <>
+      <BrowserRouter>
         <Routes>
-            <Route path="/" element={<LoginPage/>}/>
-            <Route path="/register" element={<RegisterPage/>}/>
-            <Route path="/dashboard" element={<DashBoard/>}/>
-            <Route path="/product" element={<Product/>}/>
-            <Route path="/CustomerTable" element={<Customer/>}/>
-            <Route path="/productTable" element={<Products/>}/>
-            <Route path="/CartProduct" element={<CartProduct/>}/>
-           
-            
-        
+          <Route path="/" element={<Product />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/dashboard" element={<DashBoard />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/customer-table" element={<Customer />} />
+          <Route path="/product-table" element={<Products />} />
         </Routes>
-        </BrowserRouter>
-
-        </>
-    )
-}
+      </BrowserRouter>
+    </>
+  );
+};

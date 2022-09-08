@@ -17,6 +17,7 @@ import { Modal } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import EditProduct from "../Component/ProductEditForm";
 import AddProduct from "../Component/ProductAddForm";
+import Layout from "../Layout/adminDashboard";
 
 
 export const Products = () => {
@@ -69,36 +70,12 @@ export const Products = () => {
 
   console.log("product detail", data);
   return (
-    <>
-      <Box>
-        <Toolbar
-          sx={{
-            backgroundColor: "white",
-            boxShadow: 3,
-            color: "black",
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-          ></IconButton>
-          <AccountCircleIcon
-            fontSize="large"
-            sx={{ cursor: "pointer" }}
-            onClick={() => {
-              alert("Why you Click me?");
-            }}
-          />
-        </Toolbar>
-      </Box>
+    <Layout>      
       <Box
         sx={{
           position: "relative",
           top: "50px",
-          Width: "100vw",
+          Width: "100%",
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
@@ -137,9 +114,9 @@ export const Products = () => {
           {add ? <AddProduct /> : console.log("nothing to show")}
           <TableContainer
             component={Paper}
-            sx={{ maxWidth: "100%", maxHeight: "400px", marginTop: "20px" }}
+            sx={{ maxWidth: '90%', maxHeight: "400px", marginTop: "20px" }}
           >
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <Table sx={{ minWidth: 100 }} aria-label="simple table">
               <TableHead sx={{ backgroundColor: "#adadad" }}>
                 <TableRow>
                   <TableCell align="center">Product id</TableCell>
@@ -188,6 +165,6 @@ export const Products = () => {
           </Modal>
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 };

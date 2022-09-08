@@ -1,22 +1,29 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import CssBaseline from '@mui/material/CssBaseline';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import CssBaseline from "@mui/material/CssBaseline";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import List from "@mui/material/List";
+import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import HomeIcon from "@mui/icons-material/Home";
+import ListItemText from "@mui/material/ListItemText";
+import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
+import { ListItemIcon } from "@mui/material";
+import InventoryIcon from "@mui/icons-material/Inventory";
+import { useNavigate } from "react-router-dom";
 
 
 const drawerWidth = 240;
 
-export default function NavBar() {
+export default function NavBar() { 
+  let navigate = useNavigate()
+  
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
         position="fixed"
@@ -24,7 +31,7 @@ export default function NavBar() {
       >
         <Toolbar>
           <Typography variant="h6" noWrap component="div">
-              E-commerce
+            E-commerce
           </Typography>
         </Toolbar>
       </AppBar>
@@ -32,9 +39,9 @@ export default function NavBar() {
         sx={{
           width: drawerWidth,
           flexShrink: 0,
-          '& .MuiDrawer-paper': {
+          "& .MuiDrawer-paper": {
             width: drawerWidth,
-            boxSizing: 'border-box',
+            boxSizing: "border-box",
           },
         }}
         variant="permanent"
@@ -43,19 +50,38 @@ export default function NavBar() {
         <Toolbar />
         <Divider />
         <List>
-          {['Home', 'Add Customer', 'Edit Customer', 'Manage Products'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemText primary={text} />
-              </ListItemButton>
-              <Divider/>
-            </ListItem>
-          ))}
+          <ListItem disablePadding>
+            <ListItemButton onClick={()=> {navigate("/dashboard")}}>
+              <ListItemIcon>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItemButton>
+            <Divider />
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton onClick={()=> {navigate("/customer-table")}}>
+              <ListItemIcon>
+                <ManageAccountsIcon />
+              </ListItemIcon>
+              <ListItemText primary="Manage Customers" />
+            </ListItemButton>
+            <Divider />
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton onClick={()=> {navigate("/product-table")}}>
+              <ListItemIcon>
+                <InventoryIcon />
+              </ListItemIcon>
+              <ListItemText primary="Manage Products" />
+            </ListItemButton>
+            <Divider />
+          </ListItem>
         </List>
       </Drawer>
       <Box
         component="main"
-        sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
+        sx={{ flexGrow: 1, bgcolor: "background.default", p: 3 }}
       >
         <Toolbar />
       </Box>
