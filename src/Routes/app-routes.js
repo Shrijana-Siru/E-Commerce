@@ -6,7 +6,7 @@ import { LoginPage } from "../pages/loginpage";
 import { Product } from "../pages/product";
 import { Products } from "../pages/ProductTable";
 import { RegisterPage } from "../pages/Registerpage";
-
+import {CartProduct} from "../Component/CartProuct";
 
 export const AppRoutes =() => {
     return(
@@ -19,6 +19,10 @@ export const AppRoutes =() => {
             <Route path="/product" element={<Product/>}/>
             <Route path="/CustomerTable" element={<Customer/>}/>
             <Route path="/productTable" element={<Products/>}/>
+            <Route path="/CartProduct" element={<CartProduct/>}/>
+           
+            
+        
         </Routes>
         </BrowserRouter>
 

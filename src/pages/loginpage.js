@@ -23,7 +23,7 @@ export const LoginPage = () => {
         setValues({ ...values, [prop]: event.target.value });
     };
 
-    const data ={
+    const data = {
         email:values.email,
         password:values.password
     }
