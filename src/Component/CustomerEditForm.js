@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 
 export default function FormCustomer(props) {
-    
+    console.log("The data",props)
     const [first_Name, setFirstName] = useState(props.edit.firstName)
     const [last_Name, setLastName] = useState(props.edit.lastName)
     const [email, setEmail] = useState(props.edit.email)

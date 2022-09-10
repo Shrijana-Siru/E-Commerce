@@ -49,7 +49,7 @@ export const Customer = () => {
   }, []);
   console.log(data);
 
-  function handleEdit(row) {
+  function handleEdit(row) {    
     console.log("The data of the employee: ", row);
     setOpen(true);
     setUser(row);

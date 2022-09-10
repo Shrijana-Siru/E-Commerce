@@ -145,14 +145,48 @@
       "userAgent": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.1 Safari/535.1"
     },
     {
-      "firstName": "sumedh",
-      "lastName": "shakya",
-      "email": "sumedh.s123@gmail.com",
-      "phone": "9999999999",
+      "firstName": "Sumedh",
+      "lastName": "Shakya",
+      "email": "sumedh@gmail.com",
+      "phone": "9833333333",
       "address": {
-        "city": "kumaripati"
+        "city": "Kumaripati"
       },
+      "gender": "male",
       "id": 6
+    },
+    {
+      "firstName": "Shrijana",
+      "lastName": "Bhandari",
+      "email": "shrijana@gmail.com",
+      "phone": "981870002",
+      "address": {
+        "city": "Putali"
+      },
+      "gender": "femele",
+      "id": 7
+    },
+    {
+      "firstName": "Shrijana",
+      "lastName": "Bhandari",
+      "email": "shrijana@gmail.com",
+      "phone": "9877772222",
+      "address": {
+        "city": "Ullunagar"
+      },
+      "gender": "others",
+      "id": 8
+    },
+    {
+      "firstName": "Aayusha",
+      "lastName": "Neupane",
+      "email": "Aayusha@gmail.com",
+      "phone": "089887777",
+      "address": {
+        "city": "address"
+      },
+      "gender": "female",
+      "id": 9
     }
   ],
   "products": [
