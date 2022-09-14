@@ -1,0 +1,14 @@
+
+input.search{
+    border:none !important;
+    background-color: #1976d2 !important;
+    height:35px;
+    border-radius: 10px;
+    padding:10px;
+    outline: none;
+    color:rgb(255, 255, 255) !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+input.search::placeholder{
+    color: rgb(255, 255, 255);
+}

@@ -1,9 +1,11 @@
-import { LoginPage } from "./pages/loginpage";
+import { AppRoutes } from "./Routes/app-routes";
 
 
 function App() {
   return (
-    <LoginPage />
+    <AppRoutes/>
+    
+
   );
 }
 
