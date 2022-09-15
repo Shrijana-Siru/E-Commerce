@@ -1,0 +1,272 @@
+{
+  "users": [
+    {
+      "firstName": "meme",
+      "lastName": "Quigley",
+      "email": "hbingley1@plala.or.jp",
+      "phone": "+7 813 117 7139",
+      "address": {
+        "city": "Louisville"
+      },
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "firstName": "Tommy",
+      "lastName": "Hills",
+      "email": "rshawe2@51.la",
+      "phone": "+63 739 292 7942",
+      "address": {
+        "city": "Grass Valley"
+      },
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "firstName": "Miles",
+      "lastName": "Cummerata",
+      "maidenName": "Maggio",
+      "age": 49,
+      "gender": "male",
+      "email": "yraigatt3@nature.com",
+      "phone": "+86 461 145 4186",
+      "username": "yraigatt3",
+      "password": "sRQxjPfdS",
+      "birthDate": "1969-01-16",
+      "image": "https://robohash.org/facilisdignissimosdolore.png",
+      "bloodGroup": "B+",
+      "height": 157,
+      "weight": 95.9,
+      "eyeColor": "Gray",
+      "hair": {
+        "color": "Blond",
+        "type": "Very curly"
+      },
+      "domain": "homestead.com",
+      "ip": "243.20.78.113",
+      "address": {
+        "address": "150 Carter Street",
+        "city": "Manchester",
+        "coordinates": {
+          "lat": 41.76556000000001,
+          "lng": -72.473091
+        },
+        "postalCode": "06040",
+        "state": "CT"
+      },
+      "macAddress": "03:45:58:59:5A:7B",
+      "university": "Shenyang Pharmaceutical University",
+      "bank": {
+        "cardExpire": "07/24",
+        "cardNumber": "3580047879369323",
+        "cardType": "jcb",
+        "currency": "Yuan Renminbi",
+        "iban": "KZ43 658B M6VS TZOU OXSO"
+      },
+      "company": {
+        "address": {
+          "address": "210 Green Road",
+          "city": "Manchester",
+          "coordinates": {
+            "lat": 41.7909099,
+            "lng": -72.51195129999999
+          },
+          "postalCode": "06042",
+          "state": "CT"
+        },
+        "department": "Business Development",
+        "name": "Wolff and Sons",
+        "title": "Paralegal"
+      },
+      "ein": "71-3644334",
+      "ssn": "487-28-6642",
+      "userAgent": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.17 Safari/537.11"
+    },
+    {
+      "id": 5,
+      "firstName": "Mavis",
+      "lastName": "Schultz",
+      "maidenName": "Yundt",
+      "age": 38,
+      "gender": "male",
+      "email": "kmeus4@upenn.edu",
+      "phone": "+372 285 771 1911",
+      "username": "kmeus4",
+      "password": "aUTdmmmbH",
+      "birthDate": "1968-11-03",
+      "image": "https://robohash.org/adverovelit.png",
+      "bloodGroup": "O+",
+      "height": 188,
+      "weight": 106.3,
+      "eyeColor": "Brown",
+      "hair": {
+        "color": "Brown",
+        "type": "Curly"
+      },
+      "domain": "columbia.edu",
+      "ip": "103.72.86.183",
+      "address": {
+        "address": "2721 Lindsay Avenue",
+        "city": "Louisville",
+        "coordinates": {
+          "lat": 38.263793,
+          "lng": -85.700243
+        },
+        "postalCode": "40206",
+        "state": "KY"
+      },
+      "macAddress": "F8:04:9E:ED:C0:68",
+      "university": "Estonian University of Life Sciences",
+      "bank": {
+        "cardExpire": "01/24",
+        "cardNumber": "4917245076693618",
+        "cardType": "visa-electron",
+        "currency": "Euro",
+        "iban": "IT41 T114 5127 716J RGYB ZRUX DSJ"
+      },
+      "company": {
+        "address": {
+          "address": "8398 West Denton Lane",
+          "city": "Glendale",
+          "coordinates": {
+            "lat": 33.515353,
+            "lng": -112.240812
+          },
+          "postalCode": "85305",
+          "state": "AZ"
+        },
+        "department": "Support",
+        "name": "Adams Inc",
+        "title": "Web Developer I"
+      },
+      "ein": "18-7178563",
+      "ssn": "667-98-5357",
+      "userAgent": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.1 Safari/535.1"
+    },
+    {
+      "firstName": "sumedh",
+      "lastName": "shakya",
+      "email": "sumedh.s123@gmail.com",
+      "phone": "9999999999",
+      "address": {
+        "city": "kumaripati"
+      },
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "title": "iPhone 14",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip ",
+      "price": "1300",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Samsung Universe 9",
+      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+      "price": 1249,
+      "discountPercentage": 15.46,
+      "rating": 4.09,
+      "stock": 36,
+      "brand": "Samsung",
+      "category": "smartphones",
+      "thumbnail": "https://dummyjson.com/image/i/products/3/thumbnail.jpg",
+      "images": [
+        "https://dummyjson.com/image/i/products/3/1.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "OPPOF19",
+      "description": "OPPO F19 is officially announced on April 2021.",
+      "price": 280,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "smartphones",
+      "thumbnail": "https://dummyjson.com/image/i/products/4/thumbnail.jpg",
+      "images": [
+        "https://dummyjson.com/image/i/products/4/1.jpg",
+        "https://dummyjson.com/image/i/products/4/2.jpg",
+        "https://dummyjson.com/image/i/products/4/3.jpg",
+        "https://dummyjson.com/image/i/products/4/4.jpg",
+        "https://dummyjson.com/image/i/products/4/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Huawei P30",
+      "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Huawei",
+      "category": "smartphones",
+      "thumbnail": "https://dummyjson.com/image/i/products/5/thumbnail.jpg",
+      "images": [
+        "https://dummyjson.com/image/i/products/5/1.jpg",
+        "https://dummyjson.com/image/i/products/5/2.jpg",
+        "https://dummyjson.com/image/i/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "MacBook Pro",
+      "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+      "price": 1749,
+      "discountPercentage": 11.02,
+      "rating": 4.57,
+      "stock": 83,
+      "brand": "APPle",
+      "category": "laptops",
+      "thumbnail": "https://dummyjson.com/image/i/products/6/thumbnail.png",
+      "images": [
+        "https://dummyjson.com/image/i/products/6/1.png",
+        "https://dummyjson.com/image/i/products/6/2.jpg",
+        "https://dummyjson.com/image/i/products/6/3.png",
+        "https://dummyjson.com/image/i/products/6/4.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Samsung Galaxy Book",
+      "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+      "price": 1499,
+      "discountPercentage": 4.15,
+      "rating": 4.25,
+      "stock": 50,
+      "brand": "Samsung",
+      "category": "laptops",
+      "thumbnail": "https://dummyjson.com/image/i/products/7/thumbnail.jpg",
+      "images": [
+        "https://dummyjson.com/image/i/products/7/1.jpg",
+        "https://dummyjson.com/image/i/products/7/2.jpg",
+        "https://dummyjson.com/image/i/products/7/3.jpg",
+        "https://dummyjson.com/image/i/products/7/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Microsoft Surface Laptop 4",
+      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+      "price": 1499,
+      "discountPercentage": 10.23,
+      "rating": 4.43,
+      "stock": 68,
+      "brand": "Microsoft Surface",
+      "category": "laptops",
+      "thumbnail": "https://dummyjson.com/image/i/products/8/thumbnail.jpg",
+      "images": [
+        "https://dummyjson.com/image/i/products/8/1.jpg",
+        "https://dummyjson.com/image/i/products/8/2.jpg",
+        "https://dummyjson.com/image/i/products/8/3.jpg",
+        "https://dummyjson.com/image/i/products/8/4.jpg",
+        "https://dummyjson.com/image/i/products/8/thumbnail.jpg"
+      ]
+    }
+  ]
+}
